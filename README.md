@@ -38,3 +38,31 @@ python -m venv venv
 source venv/bin/activate   # for macOS/Linux
 venv\Scripts\activate      # for Windows
 ```
+
+## 3. Install Dependencies
+```bash
+pip install pandas matplotlib
+```
+## 4. Load the Dataset into SQLite
+
+Run the script to import the dataset into a local SQLite database:
+
+```bash
+python scripts/create_db.py
+```
+
+## 5. Run SQL Analysis Queries
+
+Execute the queries to extract insights:
+
+```bash
+python scripts/analysis_queries.py
+```
+
+## 6. Visualize Insights with Python
+
+Generate charts from the CSV query results:
+
+```bash
+python scripts/visualize_results.py
+```
