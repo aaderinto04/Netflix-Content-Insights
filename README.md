@@ -15,26 +15,7 @@ All data analysis and visualization steps are automated through Python scripts.
 
 ---
 
-## Project Structure
-netflix_insights/
-│
-├── data/
-│ └── netflix_titles.csv # Dataset from Kaggle
-│
-├── scripts/
-│ ├── create_db.py # Loads CSV data into SQLite database
-│ ├── analysis_queries.py # Runs SQL queries and saves results
-│ └── visualization.py # Creates charts from query outputs
-│
-├── outputs/
-│ ├── countries.csv
-│ ├── genre.csv
-│ ├── growth.csv
-│ ├── top_countries.png
-│ ├── genre_distribution.png
-│ └── yearly_growth.png
-│
-└── README.md
+
 
 
 ---
@@ -47,9 +28,69 @@ netflix_insights/
 
 ---
 
-## How to Run
-
-### 1. Clone the Repository
-```bash
+How to Run
+1. Clone the Repository
 git clone https://github.com/yourusername/netflix-content-insights.git
 cd netflix-content-insights
+
+2. Create and Activate a Virtual Environment
+python -m venv venv
+source venv/bin/activate   # for macOS/Linux
+venv\Scripts\activate      # for Windows
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+
+Main Libraries Used:
+
+pandas
+
+matplotlib
+
+sqlite3 (built-in)
+
+4. Load the Dataset into SQLite
+
+Run the load_data.py script to import the dataset into a local SQLite database.
+
+python load_data.py
+
+
+This script will:
+
+Create a local database file named netflix.db
+
+Load the Netflix CSV dataset into a table named netflix_titles
+
+5. Run SQL Analysis Queries
+
+Open and execute analysis_queries.sql in a SQL client or Python.
+
+Includes queries for:
+
+Top producing countries
+
+Genre distribution
+
+Yearly title growth
+
+Example (run from terminal):
+
+sqlite3 netflix.db < analysis_queries.sql
+
+6. Visualize Insights with Python
+
+Run the visualization script to generate charts using Matplotlib.
+
+python visualize_results.py
+
+
+Outputs:
+
+top_countries.png — Bar chart of countries with most titles
+
+genre_distribution.png — Pie chart showing genre breakdown
+
+yearly_growth.png — Line chart of content growth by year
+
