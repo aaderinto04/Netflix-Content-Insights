@@ -17,11 +17,8 @@ All data analysis and visualization steps are automated through Python scripts.
 
 
 
-
----
-
 ## Dataset
-**Source:** [Kaggle — Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+**Source:** [Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
 **Columns include:**  
 `show_id, type, title, director, cast, country, date_added, release_year, rating, duration, listed_in, description`
@@ -35,8 +32,5 @@ All data analysis and visualization steps are automated through Python scripts.
 git clone https://github.com/yourusername/netflix-content-insights.git
 cd netflix-content-insights
 
-### 2. Create and Activate a Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate   # for macOS/Linux
-venv\Scripts\activate      # for Windows
+3. Install Dependencies
+pip install pandas matplotlib
