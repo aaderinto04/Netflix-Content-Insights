@@ -29,7 +29,7 @@ All data analysis and visualization steps are automated through Python scripts.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/netflix-content-insights.git
+git clone https://github.com/aaderinto04/Netflix-Content-Insights.git
 cd netflix-content-insights
 ```
 ### 2. Create and Activate a Virtual Environment
@@ -64,5 +64,5 @@ python scripts/analysis_queries.py
 Generate charts from the CSV query results:
 
 ```bash
-python scripts/visualize_results.py
+python scripts/visualization.py
 ```
