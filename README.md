@@ -31,6 +31,10 @@ All data analysis and visualization steps are automated through Python scripts.
 ```bash
 git clone https://github.com/yourusername/netflix-content-insights.git
 cd netflix-content-insights
-
-3. Install Dependencies
-pip install pandas matplotlib
+```
+### 2. Create and Activate a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate   # for macOS/Linux
+venv\Scripts\activate      # for Windows
+```
